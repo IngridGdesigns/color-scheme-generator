@@ -3,15 +3,13 @@ const btn = document.getElementById("btn");
 const select = document.getElementById("color-scheme");
 const boxes = document.getElementById("color-boxes");
 
-console.log('hello netlify, testing 1, 2, 3')
-
 let color = '' || 'ff0000'; // default
 let option = '';
 
-// window.addEventListener("load", (e) => {
-//     // console.log("page is fully loaded now")
-//     fetchColors('ff0000', 'Monochrome');
-// })
+// load color on run
+window.addEventListener("load", (e) => {
+    fetchColors(color, 'monochrome') 
+})
 
 colorPicker.addEventListener("change", function(e) {
     const colorValue = e.target.value;
@@ -42,6 +40,3 @@ function fetchColors(color, option){
         boxes.innerHTML = box;
     })
 }
-
-
-

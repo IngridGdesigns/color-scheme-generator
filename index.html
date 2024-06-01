@@ -1,44 +1,41 @@
 <html>
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <title>Color Picker</title>
-        
-        <!-- Google font -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-        
-        <!-- styleSheet -->
-        <link rel="stylesheet" href="index.css">
-        
-    </head>
-    <body>
-       <div class="container">
-           <div class="bg">
+
+<head>
+    <title>Color Picker</title>
+
+    <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <!-- styleSheet -->
+    <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg">
             <div id="color-selector" class="color-selector">
-                <input type="color" id="color-picker" value="#EB2D2D" ></input>
-                    <select id="color-scheme" type="color-scheme" class="custom-select">
-                        <option value="monochrome">Monochrome</option>
-                        <option value="monochrome-dark">Monochrome Dark</option>
-                        <option value="monochrome-light">Monochrome Light</option>
-                        <option value="analogic">Analogic</option>
-                        <option value="complement">Complement</option>
-                        <option value="analogic-complement">Analogic Complement</option>
-                        <option value="triad">Triad</option>
-                        <option value="quad">Quad</option>
-                    </select>
-                <button id="btn" class="btn" >Get color scheme</button>
+                <input type="color" id="color-picker" value="#EB2D2D"></input>
+                <select id="color-scheme" type="color-scheme" class="custom-select">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome Dark</option>
+                    <option value="monochrome-light">Monochrome Light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic Complement</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+                <button id="btn" class="btn">Get color scheme</button>
             </div>
-            
+
             <section id="color-boxes" class="color-boxes">
-                <!-- will refactor to fetch colors instead of hardcoding in near future -->
-                <div class="box" style='background-color: #891010'><p id="color-text1">#891010</p></div>
-                <div class="box"  style='background-color: #B81414'><p id="color-text2">#B81414</p></div>
-                <div class="box"  style='background-color: #E71818'><p id="color-text3">#E71818</p></div>
-                <div class="box"  style='background-color: #ED4545'><p id="color-text4">#ED4545</p></div>
-                <div class="box"  style='background-color: #F27272'><p id="color-text5">#F27272</p></div>
             </section>
-            </div>
         </div>
-        <script src="index.js" type="module"></script>
-    </body>
+    </div>
+    <script src="index.js" type="module"></script>
+</body>
+
 </html>
