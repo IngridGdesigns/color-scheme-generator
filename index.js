@@ -3,6 +3,8 @@ const btn = document.getElementById("btn");
 const select = document.getElementById("color-scheme");
 const boxes = document.getElementById("color-boxes");
 
+console.log('hello netlify, testing 1, 2, 3')
+
 let color = '' || 'ff0000'; // default
 let option = '';
 
