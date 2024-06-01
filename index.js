@@ -12,7 +12,7 @@ let option = '';
 // })
 
 colorPicker.addEventListener("change", function(e) {
-    const colorValue = event.target.value;
+    const colorValue = e.target.value;
     color = colorValue.slice(1); //removing # sign in front of hex value
 
 })
